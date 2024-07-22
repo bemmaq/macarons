@@ -1,6 +1,7 @@
 import React from 'react'
 import Banner from './About/ui/Banner'
 import SetPage from '../SetPage/ui/SetPage'
+import Sale from '../Sale/ul/Sale'
 
 const HomePage = () => {
   return (
@@ -10,6 +11,7 @@ const HomePage = () => {
 
       <Banner/>
       <SetPage/>
+      <Sale/>
     </div>
   )
 }
