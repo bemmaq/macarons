@@ -10,9 +10,9 @@ const HeaderLogo = () => {
     <div>
       <Container>
         <div className=" h-[100px] ">
-          <div className="flex items-center justify-between pt-[28px]">
+          <div className="flex justify-between pt-[28px]">
             <div >
-              <nav className="flex gap-1 items-center pb-1 pl-20 ">
+              <nav className="flex gap-1 items-center  pl-20 pt-[48px] ">
                 <h1> СЛАДКИЕ ДНИ</h1>
                 <img className="w-[16px] h-[18px]" src={Prosent} alt="" />
               </nav>
