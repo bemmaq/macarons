@@ -48,3 +48,5 @@ export const saleItems = [
       description: 'Карамель на палочке из натуральных ингредиентов',
     },  
   ];
+
+ 
