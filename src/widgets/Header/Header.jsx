@@ -40,15 +40,6 @@ const Header = () => {
 
             <SwiperSlide>
               <div className="flex items-center justify-center gap-[14px]">
-                <img src={SwiperTwo} alt="" />
-                <h1 className="text-black font-light text-lg">
-                  ОПТОВЫЕ ПОСТАВКИ ОТ ПРОИЗВОДИТЕЛЯ{" "}
-                </h1>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className="flex items-center justify-center gap-[14px]">
                 <img src={SwiperThree} alt="" />
                 <h1 className="text-black font-light text-lg">
                   ВСЕГДА СВЕЖЕЕ{" "}
@@ -58,8 +49,7 @@ const Header = () => {
 
             <SwiperSlide>
               <div className="flex items-center justify-center gap-[14px]">
-                <div >
-            
+                <div>
                   <img src={SwiperFour} alt="" />
                 </div>
 
