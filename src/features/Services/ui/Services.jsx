@@ -8,8 +8,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 
 const fadeInUp = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 },
+  hidden: {
+    opacity: 0,
+    scale: 0.5,
+  },
+  visible: (custom) => ({
+    opacity: 1,
+    scale: 1,
+    transition: { delay: custom * 0.2 },
+  }),
   };
 
 const Services = () => {
@@ -17,12 +24,9 @@ const Services = () => {
       <Container>
         <section className="py-8 bg-white">
           <motion.div
-            className="mx-auto"
-            initial="hidden"
-            animate="visible"
-            variants={{
-              visible: { transition: { staggerChildren: 0.3 } },
-            }}
+           initial="hidden"
+           whileInView="visible"
+           viewport={{ amount: 0.4, once: true }}
           >
             <motion.h2 className="text-3xl font-bold mb-8 text-center" variants={fadeInUp}>
               Мы обо всём позаботились
