@@ -4,6 +4,7 @@ import Logoo from "../../shared/assets/svg/logo.svg";
 import Container from "./../../shared/Container/Container";
 import line from '../../shared/assets/svg/line.svg'
 import liner from '../../shared/assets/svg/lineR.svg'
+import { Link } from "react-router-dom";
 
 const HeaderLogo = () => {
   return (
@@ -19,8 +20,10 @@ const HeaderLogo = () => {
             </div>
             <div className="flex gap-5">
               <img src={line} alt="" />
-
+              <Link to={'/'}>
+              
               <img className="w-[124px] h-[124px]" src={Logoo} alt="" />
+              </Link>
               <img src={liner}alt="" />
             </div>
             <div className="flex items-center gap-5">
