@@ -2,7 +2,8 @@ import { createBrowserRouter } from "react-router-dom";
 import Layout from "../../widgets/Layout/Layout";
 import ErrorPage from "../../widgets/ErrorPage/ErrorPage";
 import HomePage from "../../features/HomePage/HomePage";
-import Contact from "../../widgets/Contact/Contact"
+import Contact from "../../widgets/Contact/Contact";
+import News  from "../../widgets/News/News";
 const router = createBrowserRouter([
     {
         path: '',
@@ -14,8 +15,12 @@ const router = createBrowserRouter([
                 element:<HomePage/>
             },
             {
-                path:'/Contact',
+                path:'/contact',
                 element:<Contact/>
+            },
+            {
+                path:'/news',
+                element:<News/>
             }
         ]
     },
