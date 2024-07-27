@@ -19,7 +19,7 @@ const HomePage = () => {
       <News />
 
       <Services />
-      <Garant/>
+    
     </div>
   )
 }

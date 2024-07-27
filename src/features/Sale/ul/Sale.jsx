@@ -27,7 +27,7 @@ const Sale = () => {
   return (
     <Container>
       <div>
-        <h2 className="text-center text-[20px] text-slate-950 pt-20">Акции</h2>
+        <h2 className="text-center text-3xl text-slate-950 pt-20 pb-7  font-bold">Акции</h2>
         <div className="flex justify-between items-center mt-4">
           <div className="flex space-x-4">
             {saleItems.slice(startIndex, startIndex + 4).map((item, index) => (
