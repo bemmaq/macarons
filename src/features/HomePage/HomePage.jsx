@@ -6,6 +6,7 @@ import PopularSets from './../PopularSets/data/ui/PopularSetsTwo';
 
 import Services from '../Services/ui/Services';
 import News from '../New/ui/New';
+import Garant from '../garant/Garant';
 const HomePage = () => {
   return (
     <div>
@@ -18,6 +19,7 @@ const HomePage = () => {
       <News />
 
       <Services />
+      <Garant/>
     </div>
   )
 }

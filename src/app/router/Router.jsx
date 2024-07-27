@@ -9,6 +9,7 @@ import Contact from "../../widgets/Contact/Contact"
 import Banner from "../../features/HomePage/About/ui/Banner";
 import SetPage from "../../features/SetPage/ui/SetPage";
 import Sale from "../../features/Sale/ul/Sale";
+import Garant from "../../features/garant/Garant";
 
 
 const router = createBrowserRouter([
@@ -21,6 +22,13 @@ const router = createBrowserRouter([
                 path:'/',
                 element:<HomePage/>
             },
+
+            {
+                path:'garant',
+                element:<Garant/>
+            },
+      
+
 
             {
                 path: '/productSet',
