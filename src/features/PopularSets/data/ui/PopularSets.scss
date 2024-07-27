@@ -1,0 +1,73 @@
+
+
+
+.Popular{
+     width: 1440px;
+    .titles-Popular{
+        align-items: center;
+        padding-left: 100px;
+        margin-top: 10px;
+        color: rgb(41, 41, 41);
+        font-family: Montserrat;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 37px;
+        letter-spacing: 0%;
+        text-align: center;
+    }  
+     .Products{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 150px;
+        margin-top: 50px;
+        position: relative;
+        .Product{
+            width: 370px;
+            height: 460px;
+            .image{
+                width: 370px;
+                height: 300px;
+            }
+            .title{
+            color: rgb(41, 41, 41);
+            font-family: Montserrat;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 22px;
+            letter-spacing: 0%;
+            margin-left: 20px;
+            margin-top: 10px;
+            }
+            p{
+                color: rgb(41, 41, 41);
+                font-family: Proxima Nova;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 17px;
+                letter-spacing: 0%;
+                margin-left: 20px;
+                margin-top: 10px;
+            }
+            div{
+                h2{
+                    color: rgb(231, 66, 106);
+                    font-family: Montserrat;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 22px;
+                    letter-spacing: 0%;
+                    margin-top: 10px;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+.Price-AddCart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
