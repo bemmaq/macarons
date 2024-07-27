@@ -21,7 +21,7 @@ export const PopularSets = () => {
   };
   return (
     <Container>
-    <h1 className="titles-Popular items-center ml-[520px] mt-[20px]">
+    <h1 className="titles-Popular text-3xl font-bold items-center ml-[520px] mt-20">
       Популярные наборы
     </h1>
     <div className="grid grid-cols-3 gap-4 mt-10 ml-10">

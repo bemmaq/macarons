@@ -4,18 +4,10 @@ import ErrorPage from "../../widgets/ErrorPage/ErrorPage";
 import HomePage from "../../features/HomePage/HomePage";
 
 import Contact from "../../widgets/Contact/Contact";
-import News  from "../../widgets/News/News";
-
+import News from "../../widgets/News/News";
 import ProductSet from "../../features/ProductSet/ui/ProductSet";
-
-import Contact from "../../widgets/Contact/Contact"
-
-import Banner from "../../features/HomePage/About/ui/Banner";
-import SetPage from "../../features/SetPage/ui/SetPage";
-import Sale from "../../features/Sale/ul/Sale";
 import Garant from "../../features/garant/Garant";
-
-
+import PopularSets from "../../features/PopularSets/data/ui/PopularSetsTwo";
 
 const router = createBrowserRouter([
     {
@@ -27,30 +19,26 @@ const router = createBrowserRouter([
                 path:'/',
                 element:<HomePage/>
             },
-
             {
                 path:'garant',
                 element:<Garant/>
             },
-      
-
-
             {
                 path: '/productSet',
                 element:<ProductSet/>
-
-
+            },
             {
                 path:'/contact',
                 element:<Contact/>
-
             },
             {
                 path:'/news',
                 element:<News/>
-
+            },
+            {
+                path:'/PopularSets',
+                element:<PopularSets/>
             }
-
         ]
     },
 ]);
