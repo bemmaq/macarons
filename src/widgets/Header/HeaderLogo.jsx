@@ -4,21 +4,11 @@ import Logoo from "../../shared/assets/svg/logo.svg";
 import Container from "../../shared/Container/Container";
 import line from "../../shared/assets/svg/line.svg";
 import liner from "../../shared/assets/svg/lineR.svg";
-import { Link, useNavigate } from "react-router-dom";
-import {ScrollContext} from '../Layout/Layout'
+import { Link } from "react-router-dom";
+import { ScrollContext } from "../Layout/Layout";
 
 const HeaderLogo = () => {
-  const scrollToSection = useContext(ScrollContext);
-  const navigate = useNavigate();
-
-  const handleScroll = (section) => {
-    navigate("/PopularSets");
-    setTimeout(() => {
-      if (scrollToSection) {
-        scrollToSection(section);
-      }
-    }, 100);
-  };
+  const { handlePopular } = useContext(ScrollContext);
 
   return (
     <div>
@@ -27,7 +17,7 @@ const HeaderLogo = () => {
           <div className="flex justify-around pt-[28px]">
             <div>
               <nav className="flex gap-1 items-center pl-40 pt-[48px]">
-                <h1 className="cursor-pointer" onClick={() => handleScroll("proPopularSetsductSet")}>СЛАДКИЕ ДНИ</h1>
+                <h1 className="cursor-pointer" onClick={handlePopular}>СЛАДКИЕ ДНИ</h1>
                 <img className="w-[16px] h-[18px]" src={Prosent} alt="" />
               </nav>
             </div>
