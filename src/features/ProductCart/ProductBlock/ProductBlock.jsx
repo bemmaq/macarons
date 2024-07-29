@@ -1,29 +1,22 @@
-import React, { forwardRef } from "react";
-import { Link } from "react-router-dom";
-import Container from "../../../../shared/Container/Container";
-import LeftP from "../../assets/Png/LeftP.png";
-import LogoCart from "../../assets/Svg/LogoCart.svg";
-import RightP from "../../assets/Png/RightP.png";
-import { PopularSet } from "../Index";
-import { motion } from "framer-motion";
+import React from "react";
+import Container from "../../../shared/Container/Container";
+import { motion } from 'framer-motion';
+import LogoCart from "../../PopularSets/assets/Svg/LogoCart.svg";
+import { CartItem } from "../data/Constant";
+
 
 const cardAnimation = {
   hidden: { opacity: 0, y: 50 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
 };
 
-const PopularSets = forwardRef((props, ref) => {
+const ProductBlock = () => {
   return (
-    <div>
-      <Container>
-        <h1
-          ref={ref}
-          className="titles-Popular text-3xl font-bold items-center ml-[520px] mt-20"
-        >
-          Популярные наборы
-        </h1>
-        <div className="grid grid-cols-3 gap-4 mt-10 ml-10">
-          {PopularSet.map((item, index) => (
+    <Container>
+      <div className="mb-20">
+        <h2 className="text-3xl font-medium text-center">Вам могут понравиться</h2>
+        <div className="grid grid-cols-4 gap-4 mt-10 ml-10">
+          {CartItem.map((item, index) => (
             <motion.div
               key={index}
               initial="hidden"
@@ -33,13 +26,13 @@ const PopularSets = forwardRef((props, ref) => {
               variants={cardAnimation}
             >
               <div className="Product p-4">
-                <Link to={`/ProductCart/${item.id}`}>
+                
                   <img
                     src={item.image}
                     alt=""
                     className="image w-full h-60 object-cover mb-4 rounded-lg"
                   />
-                </Link>
+                
                 <h2 className="title text-gray-900 font-bold text-lg mb-2">
                   {item.title}
                 </h2>
@@ -59,19 +52,9 @@ const PopularSets = forwardRef((props, ref) => {
             </motion.div>
           ))}
         </div>
-        <img
-          className="absolute mt-[-1000px] ml-[-150px]"
-          src={LeftP}
-          alt="Left Decoration"
-        />
-        <img
-          className="absolute ml-[1180px] mt-[-900px]"
-          src={RightP}
-          alt="Right Decoration"
-        />
-      </Container>
-    </div>
+      </div>
+    </Container>
   );
-});
+};
 
-export default PopularSets;
+export default ProductBlock;

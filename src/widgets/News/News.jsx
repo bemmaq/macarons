@@ -10,7 +10,7 @@ function News() {
       <div className="New mt-40">
         <h1 className="text-[rgb(41, 41, 41)] font-montserrat text-2xl font-semibold leading-[37px] tracking-[0%] ml-[500px] mt-[-140px]"
         >Новости</h1>
-        <div className="flex justify-center items-center w-[1200px] mt-[80px] ">
+        <div className="flex justify-center items-center w-[1200px] mt-[80px]  ">
           {/* 1 */}
           <div className="w-[110px] h-[40px] rounded-full bg-[pink] ml-[-400px] p-1 ">
             <h2 className="text-center mt-1 items-center text-slate-600"

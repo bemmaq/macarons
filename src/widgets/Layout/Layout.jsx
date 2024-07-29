@@ -1,28 +1,25 @@
-import React, { createContext } from "react";
+import React, { createContext, useRef } from "react";
 import { Outlet } from "react-router-dom";
-import { scroller } from "react-scroll"; // Import scroller from react-scroll
 import Header from "./../Header/Header";
 import Footer from "./../Footer.jsx/Footer";
 
 export const ScrollContext = createContext();
 
 const Layout = () => {
-  const scrollToSection = (section) => {
-    scroller.scrollTo(section, {
-      duration: 800,
-      delay: 0,
-      smooth: "easeInOutQuart",
-    });
-  }; // Close the scrollToSection function properly
+  const popularSetsRef = useRef(null);
+
+  const handlePopular = () => {
+    popularSetsRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
-    <div>
-      <ScrollContext.Provider value={scrollToSection}>
+    <ScrollContext.Provider value={{ handlePopular }}>
+      <div>
         <Header />
-        <Outlet />
+        <Outlet context={{ popularSetsRef }} />
         <Footer />
-      </ScrollContext.Provider>
-    </div>
+      </div>
+    </ScrollContext.Provider>
   );
 };
 

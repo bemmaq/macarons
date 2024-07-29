@@ -1,5 +1,6 @@
-export const   NewsProducts = [
+export const NewsProducts = [
   {
+    id: 1,
     image:
       "https://macaronshop.ru/wp-content/uploads/2024/06/podarok-rukovoditelyu.jpg",
     title: "Впереди праздник пасхи",
@@ -8,6 +9,7 @@ export const   NewsProducts = [
     time: "24.07.2024",
   },
   {
+    id: 2,
     image:
       "https://macaronshop.ru/wp-content/uploads/2024/06/podarok-na-svadbu.jpg",
     title: "Аппетитные наборы с НОВЫМИ вкусами",
@@ -16,6 +18,7 @@ export const   NewsProducts = [
     time: "24.07.2024",
   },
   {
+    id: 3,
     image:
       "https://macaronshop.ru/wp-content/uploads/2024/06/den-rozhdeniya.jpg",
     title: "Мы печем пышные и мягкие маффины",
@@ -24,6 +27,7 @@ export const   NewsProducts = [
     time: "24.07.2024",
   },
   {
+    id: 4,
     image:
       "https://macaronshop.ru/wp-content/uploads/2024/06/podarok-muzhchine.jpg",
     title: "Впереди свадьба?",
@@ -32,6 +36,7 @@ export const   NewsProducts = [
     time: "24.07.2024",
   },
   {
+    id: 5,
     image:
       "https://macaronshop.ru/wp-content/uploads/2024/06/podarok-na-godovshinu.jpg",
     title: "Подарки для женщина",
@@ -40,6 +45,7 @@ export const   NewsProducts = [
     time: "24.07.2024",
   },
   {
+    id: 6,
     image:
       "https://macaronshop.ru/wp-content/uploads/2024/06/podarok-dlya-mamy.jpg",
     title: "Сладкие подарки на 23 февраля",
@@ -48,6 +54,7 @@ export const   NewsProducts = [
     time: "24.07.2024",
   },
   {
+    id: 7,
     image:
       "https://macaronshop.ru/wp-content/uploads/2024/06/podarok-parnyu.jpg",
     title: "Скоро главный праздник весны!",
@@ -56,6 +63,7 @@ export const   NewsProducts = [
     time: "24.07.2024",
   },
   {
+    id: 8,
     image:
       "https://macaronshop.ru/wp-content/uploads/2024/06/podarok-ottsu.jpg",
     title: "Конкурс на 23 февраля!",
@@ -64,6 +72,7 @@ export const   NewsProducts = [
     time: "24.07.2024",
   },
   {
+    id: 9,
     image:
       "https://macaronshop.ru/wp-content/uploads/2024/06/podarok-dlya-babushki.jpg",
     title: "Экспресс-конкурс ко дню Святого Валентина",

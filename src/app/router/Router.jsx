@@ -8,6 +8,8 @@ import News from "../../widgets/News/News";
 import ProductSet from "../../features/ProductSet/ui/ProductSet";
 import Garant from "../../features/garant/Garant";
 import PopularSets from "../../features/PopularSets/data/ui/PopularSetsTwo";
+import ProductCart from "../../features/ProductCart/ui/ProductCart";
+import NewProduct from './../../features/NewProduct/ui/NewProduct';
 
 const router = createBrowserRouter([
     {
@@ -38,6 +40,14 @@ const router = createBrowserRouter([
             {
                 path:'/PopularSets',
                 element:<PopularSets/>
+            },
+            {
+                path:'ProductCart/:id',
+                element:<ProductCart/>
+            },
+            {
+                path:'/neew',
+                element:<NewProduct/>
             }
         ]
     },
