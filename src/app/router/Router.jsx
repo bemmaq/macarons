@@ -4,6 +4,7 @@ import ErrorPage from "../../widgets/ErrorPage/ErrorPage";
 import HomePage from "../../features/HomePage/HomePage";
 import Contact from "../../widgets/Contact/Contact";
 import News  from "../../widgets/News/News";
+import Cart from "../../widgets/Cart/Cart";
 const router = createBrowserRouter([
     {
         path: '',
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
             {
                 path:'/news',
                 element:<News/>
+            },
+            {
+                path:'/cart',
+                element:<Cart/>
             }
         ]
     },
