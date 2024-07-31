@@ -1,25 +1,25 @@
-import React from 'react'
-import Banner from './About/ui/Banner'
-import SetPage from '../SetPage/ui/SetPage'
-import Sale from '../Sale/ul/Sale'
-import PopularSets from './../PopularSets/data/ui/PopularSetsTwo';
+import React from "react";
+import Banner from "./About/ui/Banner";
+import SetPage from "../SetPage/ui/SetPage";
+import Sale from "../Sale/ul/Sale";
+import PopularSets from "./../PopularSets/data/ui/PopularSetsTwo";
+import Services from "../Services/ui/Services";
+import { useOutletContext } from "react-router-dom";
+import NewProduct from "../NewProduct/ui/NewProduct";
 
-import Services from '../Services/ui/Services';
-import News from '../New/ui/New';
 const HomePage = () => {
+  const { popularSetsRef } = useOutletContext();
+
   return (
     <div>
-
-
       <Banner />
       <SetPage />
       <Sale />
-      <PopularSets />
-      <News />
-
+      <PopularSets ref={popularSetsRef} />
+      <NewProduct />
       <Services />
     </div>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;
