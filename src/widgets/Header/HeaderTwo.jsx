@@ -54,8 +54,16 @@ const HeaderTwo = () => {
       <Container>
         <div className="flex justify-between h-[48px]">
           <nav className="flex items-center gap-3">
+            <Link to='/garant'>
             <p>Гарантия свежести</p>
+
+            </Link>
+
+            <Link to={'/Contact'}>
+            
+
             <h1>Контакты</h1>
+            </Link>
           </nav>
           <div className="flex  gap-5">
             <nav className="flex items-center relative">
