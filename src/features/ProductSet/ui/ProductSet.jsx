@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import { motion } from "framer-motion";
 import Container from "../../../shared/Container/Container";
@@ -25,15 +23,12 @@ const ProductSet = () => {
   return (
     <Container className="relative">
       <p className="text-[#989898] font-proxima text-sm font-normal leading-[17.05px] text-center mt-[80px] mb-[-50px]">
-
-        Главная > Каталог >
+        Главная Каталог
         <span className="text-[#4e9dd3] font-proxima text-sm font-normal leading-[17.05px] text-left">
           {" "}
-
-        Главная  Каталог 
+          Главная Каталог
+        </span>
         <span className="text-[#4e9dd3] font-proxima text-sm font-normal leading-[17.05px] text-left">
-        
-
           Готовые наборы
         </span>
       </p>
@@ -46,16 +41,18 @@ const ProductSet = () => {
           visible: { transition: { staggerChildren: 0.5 } },
         }}
       >
-        {["Свадьба", "8 марта", "Новый год",'Без печати'].map((text, index) => (
-          <motion.h1
-            key={index}
-            className="w-[100px] h-[40px]  text-[#000] rounded-[100px]  bg-[#F7EBE5] mb-2 text-center p-2.5 font-proxima text-[14px]"
-            variants={headingVariants}
-            transition={{ duration: 0.5 }}
-          >
-            {text}
-          </motion.h1>
-        ))}
+        {["Свадьба", "8 марта", "Новый год", "Без печати"].map(
+          (text, index) => (
+            <motion.h1
+              key={index}
+              className="w-[100px] h-[40px]  text-[#000] rounded-[100px]  bg-[#F7EBE5] mb-2 text-center p-2.5 font-proxima text-[14px]"
+              variants={headingVariants}
+              transition={{ duration: 0.5 }}
+            >
+              {text}
+            </motion.h1>
+          )
+        )}
       </motion.div>
 
       <h1 className="my-[100px] text-center font-montserrat text-[30px] font-semibold leading-[36.57px]">

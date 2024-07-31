@@ -16,7 +16,8 @@ import HeaderTwo from "./HeaderTwo.jsx";
 import Container from "../../shared/Container/Container.jsx";
 import HeaderLogo from "./HeaderLogo.jsx";
 
-const Header = () => {
+const Header = ({handlePopular}) => {
+  
   return (
     <div className="">
       <div className="bg-blue-200">
@@ -64,7 +65,7 @@ const Header = () => {
 
       <HeaderTwo />
 
-      <HeaderLogo />
+      <HeaderLogo handlePopular={handlePopular}/>
     </div>
   );
 };

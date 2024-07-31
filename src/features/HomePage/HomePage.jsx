@@ -1,11 +1,11 @@
 import React from "react";
+import { useOutletContext } from "react-router-dom";
 import Banner from "./About/ui/Banner";
 import SetPage from "../SetPage/ui/SetPage";
 import Sale from "../Sale/ul/Sale";
-import PopularSets from "./../PopularSets/data/ui/PopularSetsTwo";
 import Services from "../Services/ui/Services";
-import { useOutletContext } from "react-router-dom";
 import NewProduct from "../NewProduct/ui/NewProduct";
+import PopularSets from './../PopularSets/data/ui/PopularSetsTwo';
 
 const HomePage = () => {
   const { popularSetsRef } = useOutletContext();

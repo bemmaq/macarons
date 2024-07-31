@@ -28,9 +28,10 @@ const SetPage = () => {
             viewport={{ amount: 0.2, once: true }}
             custom={index + 1}
             variants={cardAnimation}
+            className={index === cardData.length - 1 ? "flex justify-center w-full" : ""}
           >
             <div
-              className="w-[570px] h-[260px] bg-cover"
+              className={`w-[570px] h-[260px] bg-cover ${index === cardData.length - 1 ? "mx-auto" : ""}`}
               style={{ backgroundImage: `url(${card.color})` }}
             >
               {index === 0 ? (
