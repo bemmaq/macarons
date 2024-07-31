@@ -3,6 +3,10 @@ import Layout from "../../widgets/Layout/Layout";
 import ErrorPage from "../../widgets/ErrorPage/ErrorPage";
 import HomePage from "../../features/HomePage/HomePage";
 
+import ProductSet from "../../features/ProductSet/ui/ProductSet";
+import GiftSets from "../../features/GiftSets/UI/GiftSets";
+
+
 import Contact from "../../widgets/Contact/Contact";
 import News from "../../widgets/News/News";
 import ProductSet from "../../features/ProductSet/ui/ProductSet";
@@ -10,6 +14,7 @@ import Garant from "../../features/garant/Garant";
 import PopularSets from "../../features/PopularSets/data/ui/PopularSetsTwo";
 import ProductCart from "../../features/ProductCart/ui/ProductCart";
 import NewProduct from './../../features/NewProduct/ui/NewProduct';
+
 
 const router = createBrowserRouter([
     {
@@ -22,6 +27,14 @@ const router = createBrowserRouter([
                 element:<HomePage/>
             },
             {
+
+                path:'/productSet',
+                element:<ProductSet/>
+            },
+            {
+                path:'/gifttSet',
+                element:<GiftSets/>
+
                 path:'garant',
                 element:<Garant/>
             },
@@ -48,6 +61,7 @@ const router = createBrowserRouter([
             {
                 path:'/neew',
                 element:<NewProduct/>
+
             }
         ]
     },
