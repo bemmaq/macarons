@@ -30,7 +30,7 @@ const giftsets = () => {
       </p>
 
       <motion.div
-        className="absolute top-[400px] left-[160px] flex justify-between gap-x-4"
+        className="absolute top-[400px] left-[420px] flex justify-between gap-x-4"
         initial="hidden"
         animate="visible"
         variants={{
@@ -41,9 +41,9 @@ const giftsets = () => {
           (tittle, index) => (
             <motion.h1
               key={index}
-              className="w-[100px] h-[40px]  text-[#000] rounded-[100px]  bg-[#F7EBE5] mb-2 text-center p-2.5 font-proxima text-[14px]"
+              className="w-[100px] h-[40px]   text-[#000] rounded-[100px]  bg-[#F7EBE5] mb-2 text-center p-2.5 font-proxima text-[14px]"
               variants={headengVariants}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.8 }}
             >
               {tittle}
             </motion.h1>
