@@ -160,6 +160,7 @@ const WeddingSet = () => {
             Каждое событие уникально и мы готовы предложить индивидуальные
             решения для Вашего мероприятия
           </motion.p>
+          
           <motion.div
             className="my-[10px]"
             initial={{ opacity: 0, y: 50 }}

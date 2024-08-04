@@ -4,6 +4,8 @@ import ErrorPage from "../../widgets/ErrorPage/ErrorPage";
 import HomePage from "../../features/HomePage/HomePage";
 
 import GiftSets from "../../features/GiftSets/UI/GiftSets";
+import ProductSet from "../../features/ProductSet/ui/ProductSet";
+import DecorationSet from "../../features/decorationSet/ui/DecorationSet";
 
 const router = createBrowserRouter([
     {
@@ -22,6 +24,10 @@ const router = createBrowserRouter([
             {
                 path:'/gifttSet',
                 element:<GiftSets/>
+            },
+            {
+                path:'/decorationSet',
+                element:<DecorationSet/>
             }
 
         ]

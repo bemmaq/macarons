@@ -1,8 +1,7 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Header from '../Header/Header'
 import { Outlet } from 'react-router-dom'
 import Footer from '../Footer.jsx/Footer'
-import ProductSet from '../../features/ProductSet/ui/ProductSet'
 
 const Layout = () => {
   const popularSetsRef = useRef(null);
@@ -15,7 +14,6 @@ const Layout = () => {
     <div>
         <Header/>
         <Outlet/>
-        {/* <ProductSet/> */}
         <Footer/>
     </div>
   );
