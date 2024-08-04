@@ -1,10 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-
-
-
 import Container from "./../../../shared/Container/Container";
 import { cardData } from "../Data/Constan";
+import { Link } from "react-router-dom";
 
 const cardAnimation = {
   hidden: {
@@ -18,8 +16,6 @@ const cardAnimation = {
   }),
 };
 
-
-
 const SetPage = () => {
   return (
     <Container>
@@ -32,18 +28,31 @@ const SetPage = () => {
             viewport={{ amount: 0.2, once: true }}
             custom={index + 1}
             variants={cardAnimation}
+            className={index === cardData.length - 1 ? "flex justify-center w-full" : ""}
           >
             <div
-              className="w-[570px] h-[260px] bg-cover"
+              className={`w-[570px] h-[260px] bg-cover ${index === cardData.length - 1 ? "mx-auto" : ""}`}
               style={{ backgroundImage: `url(${card.color})` }}
             >
-              <div className="flex flex-col items-center justify-center pt-[30px]">
-                <img src={card.svg} alt="" />
-                <h1>{card.title}</h1>
-                {card.description.map((desc, i) => (
-                  <p key={i}>{desc}</p>
-                ))}
-              </div>
+              {index === 0 ? (
+                <Link to="/productSet">
+                  <div className="flex flex-col items-center justify-center pt-[30px]">
+                    <img src={card.svg} alt="" />
+                    <h1>{card.title}</h1>
+                    {card.description.map((desc, i) => (
+                      <p key={i}>{desc}</p>
+                    ))}
+                  </div>
+                </Link>
+              ) : (
+                <div className="flex flex-col items-center justify-center pt-[30px]">
+                  <img src={card.svg} alt="" />
+                  <h1>{card.title}</h1>
+                  {card.description.map((desc, i) => (
+                    <p key={i}>{desc}</p>
+                  ))}
+                </div>
+              )}
             </div>
           </motion.div>
         ))}

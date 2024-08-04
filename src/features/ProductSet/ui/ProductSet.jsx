@@ -19,15 +19,10 @@ const ProductSet = () => {
   return (
     <Container className="relative">
       <p className="text-[#989898] font-proxima text-sm font-normal leading-[17.05px] text-center mt-[80px] mb-[-50px]">
-        <Link
-          to="/"
-          className="text-[#989898] font-proxima text-sm font-normal leading-[17.05px]"
-        >
-          Главная >
-        </Link>
-        Каталог >
+        Главная > Каталог >
         <span className="text-[#4e9dd3] font-proxima text-sm font-normal leading-[17.05px] text-left">
-        Готовые наборы
+          {" "}
+          Готовые наборы
         </span>
       </p>
 
