@@ -5,7 +5,7 @@ import SetPage from "../SetPage/ui/SetPage";
 import Sale from "../Sale/ul/Sale";
 import Services from "../Services/ui/Services";
 import NewProduct from "../NewProduct/ui/NewProduct";
-import PopularSets from './../PopularSets/data/ui/PopularSetsTwo';
+import PopularSets from "./../PopularSets/data/ui/PopularSetsTwo";
 
 const HomePage = () => {
   const { popularSetsRef } = useOutletContext();

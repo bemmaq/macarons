@@ -1,8 +1,8 @@
-import React from "react";
-import { motion } from "framer-motion";
-import Container from "./../../../shared/Container/Container";
-import { cardData } from "../Data/Constan";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { motion } from 'framer-motion';
+import Container from './../../../shared/Container/Container';
+import { cardData } from '../Data/Constan';
+import { Link } from 'react-router-dom';
 
 const cardAnimation = {
   hidden: {
@@ -34,17 +34,7 @@ const SetPage = () => {
               className={`w-[570px] h-[260px] bg-cover ${index === cardData.length - 1 ? "mx-auto" : ""}`}
               style={{ backgroundImage: `url(${card.color})` }}
             >
-              {index === 0 ? (
-                <Link to="/productSet">
-                  <div className="flex flex-col items-center justify-center pt-[30px]">
-                    <img src={card.svg} alt="" />
-                    <h1>{card.title}</h1>
-                    {card.description.map((desc, i) => (
-                      <p key={i}>{desc}</p>
-                    ))}
-                  </div>
-                </Link>
-              ) : (
+              <Link to={card.path}>
                 <div className="flex flex-col items-center justify-center pt-[30px]">
                   <img src={card.svg} alt="" />
                   <h1>{card.title}</h1>
@@ -52,7 +42,7 @@ const SetPage = () => {
                     <p key={i}>{desc}</p>
                   ))}
                 </div>
-              )}
+              </Link>
             </div>
           </motion.div>
         ))}

@@ -12,8 +12,8 @@ const Layout = () => {
 
   return (
     <div>
-        <Header/>
-        <Outlet/>
+        <Header handlePopular={handlePopular}/>
+        <Outlet context={{ popularSetsRef }} />
         <Footer/>
     </div>
   );
