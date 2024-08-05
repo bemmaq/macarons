@@ -14,6 +14,8 @@ import ProductCart from "../../features/ProductCart/ui/ProductCart";
 import NewProduct from "./../../features/NewProduct/ui/NewProduct";
 import News from "./../../widgets/News/News";
 import CartBlock from './../../widgets/Cart/CartBlock';
+import Sale from "../../features/Sale/ul/Sale";
+import Assemble from "../../features/Assemble/ui/Assemble";
 
 const router = createBrowserRouter([
   {
@@ -58,13 +60,21 @@ const router = createBrowserRouter([
         element: <PopularSets />,
       },
       {
-        path: "ProductCart/:id",
+        path: "/ProductCart/:id",
         element: <ProductCart />,
       },
       {
         path: "/neew",
         element: <NewProduct />,
       },
+      {
+        path:'/sale/:id',
+        element:<Sale/>
+      },
+      {
+        path:'/Assemble',
+        element:<Assemble/>
+      }
     ],
   },
 ]);
