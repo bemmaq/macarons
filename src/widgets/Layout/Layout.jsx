@@ -1,7 +1,7 @@
-import React, { useRef } from "react";
-import { Outlet } from "react-router-dom";
-import Header from "../Header/Header";
-import Footer from "../Footer.jsx/Footer";
+import React, { useRef } from 'react'
+import Header from '../Header/Header'
+import { Outlet } from 'react-router-dom'
+import Footer from '../Footer.jsx/Footer'
 
 const Layout = () => {
   const popularSetsRef = useRef(null);
@@ -12,9 +12,9 @@ const Layout = () => {
 
   return (
     <div>
-      <Header handlePopular={handlePopular} />
-      <Outlet context={{ popularSetsRef }} />
-      <Footer />
+        <Header/>
+        <Outlet/>
+        <Footer/>
     </div>
   );
 };

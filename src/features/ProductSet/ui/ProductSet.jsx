@@ -3,15 +3,11 @@ import { motion } from "framer-motion";
 import Container from "../../../shared/Container/Container";
 import { productData } from "../data/Constant";
 import bag from "../../../shared/assets/svg/bag.svg";
+import { Link } from "react-router-dom";
 
 const ProductSet = () => {
   const cardVariants = {
     hidden: { opacity: 0, y: -80 },
-    visible: { opacity: 1, y: 0 },
-  };
-
-  const buttonVariants = {
-    hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0 },
   };
 
@@ -23,12 +19,12 @@ const ProductSet = () => {
   return (
     <Container className="relative">
       <p className="text-[#989898] font-proxima text-sm font-normal leading-[17.05px] text-center mt-[80px] mb-[-50px]">
-        Главная Каталог
+      <Link to={'/'}>
+      Главная >
+      </Link>
+         Каталог >
         <span className="text-[#4e9dd3] font-proxima text-sm font-normal leading-[17.05px] text-left">
           {" "}
-          Главная Каталог
-        </span>
-        <span className="text-[#4e9dd3] font-proxima text-sm font-normal leading-[17.05px] text-left">
           Готовые наборы
         </span>
       </p>
@@ -95,31 +91,6 @@ const ProductSet = () => {
           </motion.div>
         ))}
       </div>
-
-      <motion.button
-        className="
-          mt-[-40px]
-          mb-[40px]
-          transform -translate-x-1/2
-          w-[293px] 
-          h-[50px] 
-          border 
-          border-[#4E9DD3]
-          rounded-tl-3px 
-          font-montserrat 
-          text-[14px] 
-          font-semibold 
-          leading-[17.07px] 
-          text-center
-          mx-[460px]
-        "
-        initial="hidden"
-        animate="visible"
-        variants={buttonVariants}
-        transition={{ duration: 0.5, delay: productData.length * 0.5 }}
-      >
-        Показать ещё
-      </motion.button>
     </Container>
   );
 };
