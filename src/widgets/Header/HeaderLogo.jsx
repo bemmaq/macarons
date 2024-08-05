@@ -27,11 +27,12 @@ const HeaderLogo = ({ handlePopular }) => {
               <img src={liner} alt="" />
             </div>
             <div className="flex items-center gap-5">
-              <Link to={'/gifttSet'}>
-              
-              <h1>ПОДАРОЧНЫЕ НАБОРЫ</h1>
+              <Link to={"/gifttSet"}>
+                <h1>ПОДАРОЧНЫЕ НАБОРЫ</h1>
               </Link>
-              <h1>СОБРАТЬ НАБОР</h1>
+              <Link to={"/Assemble"}>
+                <h1>СОБРАТЬ НАБОР</h1>
+              </Link>
             </div>
           </div>
         </div>

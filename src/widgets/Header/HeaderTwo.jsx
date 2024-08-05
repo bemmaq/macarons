@@ -69,10 +69,13 @@ const HeaderTwo = () => {
               <img src={Phone} alt="" />
               <h1>+996 (505) 439 323</h1>
             </nav>
-            <nav className="flex items-center">
-              <img src={Cart} alt="" />
-              <h1>В корзине </h1>
-            </nav>
+            <Link to={"/cart"}>
+              <nav className="flex items-center pt-3">
+                <img src={Cart} alt="" />
+                <h1>В корзине </h1>
+              </nav>
+            </Link>
+
             <div className="flex items-center">
               <Link to={"https://web.telegram.org/a/"}>
                 <img width={30} src={telegramm} alt="" />

@@ -10,8 +10,6 @@ import CartLogo from "./data/svg/CartLogo.svg";
 
 function CartBlock() {
   return (
-    
-  
     <Container>
       <hr className="absolute w-[670px] mt-[325px] ml-[-50px]" />
       <hr className="absolute w-[670px] mt-[448px] ml-[-50px]" />
