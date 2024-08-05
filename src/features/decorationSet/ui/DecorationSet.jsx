@@ -24,7 +24,7 @@ const DecorationSet = () => {
 
   return (
     <Container>
-      <div className="bg bg-[#f7f7f7] h-[1700px] mt-20 ">
+      <div className="bg bg-[#f7f7f7] h-[1000px] my-20 ">
         <p className="text-[#989898] font-proxima text-sm font-normal leading-[17.05px] text-center pt-[34px] pb-[27px]">
           <Link to={"/"}>Главная ></Link>
           <span className="text-[#4e9dd3] font-proxima text-sm font-normal leading-[17.05px]  ">

@@ -8,13 +8,14 @@ import ProductSet from "../../features/ProductSet/ui/ProductSet";
 import Garant from "../../features/garant/Garant";
 import PopularSets from "../../features/PopularSets/data/ui/PopularSetsTwo";
 import ProductCart from "../../features/ProductCart/ui/ProductCart";
-import NewProduct from "./../../features/NewProduct/ui/NewProduct";
-import News from "./../../widgets/News/News";
-import CartBlock from './../../widgets/Cart/CartBlock';
-import Sale from "../../features/Sale/ul/Sale";
+import NewProduct from "../../features/NewProduct/ui/NewProduct";
+import News from "../../widgets/News/News";
+import CartBlock from "../../widgets/Cart/CartBlock";
 import Assemble from "../../features/Assemble/ui/Assemble";
-
 import DecorationSet from "../../features/decorationSet/ui/DecorationSet";
+import Contact from "../../widgets/Contact/Contact"; // Assuming this import is needed
+import Sale from "../../features/Sale/ul/Sale";
+import WeddingSet from "../../features/WeddingSet/UI/WeddingSet";
 
 const router = createBrowserRouter([
   {
@@ -31,16 +32,12 @@ const router = createBrowserRouter([
         element: <ProductSet />,
       },
       {
-        path: "/gifttSet",
+        path: "/giftSet",
         element: <GiftSets />,
       },
       {
-        path: "garant",
+        path: "/garant",
         element: <Garant />,
-      },
-      {
-        path: "/productSet",
-        element: <ProductSet />,
       },
       {
         path: "/contact",
@@ -55,30 +52,35 @@ const router = createBrowserRouter([
         element: <CartBlock />,
       },
       {
-        path: "/PopularSets",
+        path: "/popularSets",
         element: <PopularSets />,
       },
       {
-        path: "/ProductCart/:id",
+        path: "/productCart/:id",
         element: <ProductCart />,
       },
-    {
-                path:'/decorationSet',
-                element:<DecorationSet/>
-            }
       {
-        path: "/neew",
+        path: "/decorationSet",
+        element: <DecorationSet />,
+      },
+      {
+        path: "/new",
         element: <NewProduct />,
       },
       {
-        path:'/sale/:id',
-        element:<Sale/>
+        path: "/sale/:id",
+        element: <Sale />,
       },
       {
-        path:'/Assemble',
-        element:<Assemble/>
+        path: "/assemble",
+        element: <Assemble />,
+      },
+      {
+        path:'/WeddingSet',
+        element:<WeddingSet/>
       }
     ],
   },
+]);
 
 export default router;
